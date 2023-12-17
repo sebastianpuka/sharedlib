@@ -4,7 +4,7 @@ def call(){
         stages{
             stage("Hello"){
                 steps{
-                    echo 'Hello World'
+                    sh 'ls -al'
                 }
             }
         }
