@@ -1,4 +1,5 @@
 def call(body){
+    
     def config= [:]
     body.resolveStrategy = Closure.DELEGATE_FIRST
     body.delegate = config
@@ -9,7 +10,7 @@ def call(body){
         stages{
             stage("Hello"){
                 steps{
-                    echo "${config.name}"
+                    echo "Hello"
                 }
             }
         }
