@@ -4,7 +4,7 @@ def call(Map config=[:]){
         stages{
             stage("Hello"){
                 steps{
-                    echo "${config.name}"
+                    echo "Hello"
                 }
             }
         }
