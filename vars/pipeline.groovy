@@ -1,5 +1,5 @@
 def call(){
-    pipeline(){
+    pipeline {
         agent any
         stages{
             stage("Hello"){
