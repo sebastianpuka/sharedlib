@@ -1,10 +1,10 @@
-def call(){
-    node() {
+def call(Map config=[:]){
+    pipeline {
         agent any
         stages{
             stage("Hello"){
                 steps{
-                    sh 'ls -al'
+                    echo "${config.name}"
                 }
             }
         }
